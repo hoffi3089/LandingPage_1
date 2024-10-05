@@ -974,6 +974,10 @@ footer {
 }
 
 @media only screen and (max-width: 576px) {
+    .h1 {
+        font-size: 30px;
+    }
+    
     .h3 {
         margin: 0 !important;
     }
