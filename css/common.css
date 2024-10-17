@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+
+}
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: 'Readex Pro', "MS Mincho", "Meiryo", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    min-width: 500px;
+}
+
+.h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -1px;
+}
+
+.h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: -0.75px;
+}
+
+.h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -0.75px;
+}
+
+.h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: -0.75px;
+}
+
+.h5 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37.5px;
+    letter-spacing: -1px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.col {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.py-35 {
+    padding: 35px 0;
+}
+.btn {
+    border-radius: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.box-shadow {
+    box-shadow: 10px 10px var(--shadow);
+}
+.letter-spacing-2 {
+    letter-spacing: -0.5px;
+}
+
+.letter-spacing-3 {
+    letter-spacing: -0.75px;
+}
+
+.letter-spacing-4 {
+    letter-spacing: -1px;
+}
+
+.letter-spacing-22 {
+    letter-spacing: 3px;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+}
+
+.td-header {
+    width: 15%;
+    text-align: center;
+}
+
+.btn-web {
+    /* gap:15%;  */
+    justify-content:left
+}
