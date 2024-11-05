@@ -122,3 +122,7 @@ body {
     /* gap:15%;  */
     justify-content:left
 }
+
+.text-shadow {
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+}
