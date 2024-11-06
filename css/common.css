@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: var(--brown);
     font-family: 'Readex Pro', "MS Mincho", "Meiryo", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", sans-serif;
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
