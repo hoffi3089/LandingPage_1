@@ -48,6 +48,7 @@ section,
 
 footer {
     justify-content: center;
+    padding: 18px 0;
 }
 
 header {
@@ -177,7 +178,8 @@ header .run-time {
 }
 
 .block-4 p,
-.block-9 p{
+.block-9 p,
+.block-11 p{
     font-size: 20PX;
     line-height: 28px;
     font-weight: 500;
@@ -261,6 +263,20 @@ header .run-time {
     border-radius:8px;
 }
 
+.block-7 table .h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    width: 200px;
+}
+
+.block-7 table tr td:not(:last-child) .h4 {
+    text-align: left;
+}
+
+.block-7 table tr td:last-child .h4 {
+    text-align: right;
+}
+
 .block-8 .container {
     display: flex;
     flex-direction: row;
@@ -311,69 +327,6 @@ header .run-time {
 .block-9 .row div {
     padding-top: 50px;
     gap: 1em;
-}
-
-
-.block-10 {
-    padding: 60px 0;
-}
-
-.block-10 .col {
-    align-items: start;
-    gap: 12px;
-}
-.block-10 .text-center-line-brown,
-.block-10 .text-center-line-gray {
-    position: relative;
-}
-.block-10 .text-center-line-brown::before,
-.block-10 .text-center-line-gray::before {
-    content: '';
-    position: absolute;
-    left: -250px;
-    top: 50%;
-    width: 250px;
-    height: 4px;
-}
-
-.block-10 .text-center-line-brown::before {
-    background-color: var(--dark-brown);
-}
-
-.block-10 .text-center-line-gray::before {
-    background-color: var(--dark-gray);
-}
-.block-10 .text-center-line-brown::after,
-.block-10 .text-center-line-gray::after {
-    content: '';
-    position: absolute;
-    right: -250px;
-    top: 50%;
-    width: 250px;
-    height: 4px;
-}
-
-.block-10 .text-center-line-brown::after {
-    background-color: var(--dark-brown);
-}
-
-.block-10 .text-center-line-gray::after {
-    background-color: var(--dark-gray);
-}
-.block-10 .p5 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: -0.5px;
-}
-
-
-.block-10 p:not(.p5) {
-    margin-top: 95px;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 60px;
-    text-align: center;
 }
 
 .radio-style {
@@ -584,14 +537,7 @@ header .run-time {
 }
 
 @media only screen and (max-width: 1200px) {
-    /* section.container,
-    section .container,
-    .block-10.container,
-    .block-11 > .row,
-    .block-12 table{
-        width: calc(100% - 60px);
-    } */
-
+    
     header {
         padding: 35px 180px;
     }
@@ -760,11 +706,6 @@ header .run-time {
         padding: 30px 0;
     }
 
-    .block-10 p:not(.p5) {
-        margin-top: 50px;
-        font-size: 24px;
-        line-height: unset;
-    }
     .block-11 {
         padding: 50px 0;
     }    
@@ -802,9 +743,7 @@ header .run-time {
         width: 75%;
         height: 500px;
     }
-    footer .h1 {
-        line-height: 50px;
-    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -954,10 +893,7 @@ header .run-time {
     .block-9 .row {
         padding: 20px 0;
     }
-    .block-10 p:not(.p5) {
-        margin-top: 30px;
-        font-size: 20px;
-    }
+    
     .block-11 > .row {
         flex-wrap: wrap;
         justify-content:center;
@@ -983,10 +919,6 @@ header .run-time {
         margin-top: 40px;
     }
 
-    footer .h1 {
-        padding: 17px 0;
-        line-height: 40px;
-    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1042,40 +974,14 @@ header .run-time {
     .block-7 .container {
         gap: 20px;
     }
-
+    .block-7 table .h4 {
+        width: 150px;
+    }
     .block-8 .container .row .col-30,
     .block-8 .container .row .col-33,
     .block-8 .container .row .col-50,
     .block-8 .container .row .col-55{
         height: 300px;
-    }
-
-    .block-10 .text-center-line-brown::after, 
-    .block-10 .text-center-line-gray::after {
-        content: '';
-        position: absolute;
-        right: -150px;
-        top: 50%;
-        width: 150px;
-        height: 4px;
-    }
-    
-    .block-8 .container {
-        padding-top: 20px;
-    }
-    .block-10 .text-center-line-brown::before, 
-    .block-10 .text-center-line-gray::before {
-        content: '';
-        position: absolute;
-        left: -150px;
-        top: 50%;
-        width: 150px;
-        height: 4px;
-    }
-
-    .block-10 p:not(.p5) {
-        margin-top: 20px;
-        font-size: 16px;
     }
 
     .block-11 > .row {
@@ -1087,8 +993,7 @@ header .run-time {
         width: 40%;
     }
 
-    footer .h1 {
-        line-height: 30px;
-        font-size: 24px;
+    footer .h3 {
+        font-size: 30px;
     }
 }
